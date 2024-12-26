@@ -26,7 +26,7 @@ function handleResize() {
 
     const button = headerContent.querySelector(".btn-burger");
 
-    headerContent.appendChild(button);
+    headerContent.removeChild(button);
   }
 }
 
