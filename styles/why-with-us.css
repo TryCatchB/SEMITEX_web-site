@@ -1,0 +1,80 @@
+.bg {
+    background-color: var(--bg-color);
+}
+
+.why-with-us {
+    padding-block: 80px;
+}
+
+.row-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin-inline: auto;
+    gap: 20px;
+
+    .row-title__title {
+        color: var(--very-dark-gray);
+    }
+
+    .row-title__text {
+        color: var(--black-coal);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.cards {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+}
+
+.card {
+    border-radius: 5px;
+    background-color: var(--white);
+    overflow: hidden;
+
+    .content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10%;
+
+        & img:not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+
+    .card__title {
+        font-weight: 700;
+        color: var(--dark-blue);
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .card__text {
+        color: var(--dark-gray);
+    }
+
+    .decor {
+        position: absolute;
+        bottom: -23px;
+        right: 0px;
+    }
+}
+
+@media (max-width: 935px) {
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}

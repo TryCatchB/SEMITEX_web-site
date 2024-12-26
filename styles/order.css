@@ -1,0 +1,145 @@
+.bg-image {
+    padding-block: 150px;
+    background-image: url(/Images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.order {
+    display: grid;
+    grid-template-columns: 630px 250px;
+    gap: 20px;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.order__title {
+    font-weight: 700;
+    font-size: 1.9375rem;
+    line-height: 112%;
+
+    & span {
+        font-size: 1.5625rem;
+        color: var(--lavander);
+    }
+}
+
+.order__text {
+    font-size: 1rem;
+    color: var(--lavander);
+}
+
+:is(.order__title, .order__text) {
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.order__list {
+    padding-block: 10px;
+    padding-inline: 10px;
+    border-radius: 5px;
+    background: var(--lavender-light-gradient);
+}
+
+.list__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & img {
+        max-height: 20px;
+    }
+}
+
+.list__text {
+    font-size: 0.875rem;
+}
+
+.order__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white);
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.form {
+    label {
+        min-width: 150px;
+        font-size: 0.75rem;
+        color: var(--cool-gray);
+    }
+
+    input {
+        width: 185px;
+        padding-left: 10px;
+        padding-block: 7px;
+        box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        background-color: var(--lavender-light);
+    }
+
+    input::placeholder {
+        color: var(--gray-blue);
+    }
+}
+
+.form__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    text-align: center;
+    min-height: 85px;
+    background: var(--violet-gradient);
+}
+
+:is(#phone, .form__title) {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.form__btn {
+    color: var(--white);
+    font-family: inherit;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.guarantee {
+    max-width: 175px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--light-gray);
+}
+
+@media (max-width: 935px) {
+    .order {
+        grid-template-columns: 1fr;
+    }
+
+    .form input {
+        padding-block: 10px;
+    }
+
+    .order__title {
+        font-size: 1.5375rem;
+    }
+}
