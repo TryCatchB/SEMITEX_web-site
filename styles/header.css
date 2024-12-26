@@ -3,12 +3,11 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: black;
 }
 
 .header__content {
     padding-block: 40px;
-    justify-content: center;
+    justify-content: space-between;
     gap: 40px;
 }
 
@@ -42,7 +41,7 @@
     background-color: var(--very-dark-gray);
     position: absolute;
     bottom: -330px;
-    left: -6px;
+    left: -217px;
     border-radius: 10px;
     padding: 10px;
     opacity: 0;
@@ -50,6 +49,7 @@
 
     &.active {
         opacity: 1;
+        left: -6px;
         bottom: -330px;
     }
 
