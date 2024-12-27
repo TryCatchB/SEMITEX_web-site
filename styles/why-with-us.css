@@ -16,6 +16,9 @@
     gap: 20px;
 
     .row-title__title {
+        font-size: 2.1875rem;
+        line-height: 150%;
+        font-weight: 700;
         color: var(--very-dark-gray);
     }
 
@@ -24,7 +27,7 @@
     }
 
     &:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 45px;
     }
 }
 

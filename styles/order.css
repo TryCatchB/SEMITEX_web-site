@@ -108,16 +108,22 @@
     }
 }
 
-.form__btn {
+.form__btn:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.btn {
     color: var(--white);
     font-family: inherit;
     padding-inline: 20px;
     padding-block: 10px;
     border-radius: 10px;
     background-color: var(--yellow);
+    transition: all 0.3s ease-in-out;
 
-    &:not(:last-child) {
-        margin-bottom: 10px;
+    &:hover {
+        background-color: var(--white);
+        color: var(--yellow);
     }
 }
 
