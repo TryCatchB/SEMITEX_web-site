@@ -50,7 +50,7 @@
     line-height: 155%;
 }
 
-:is(.btn-left, .btn-right) {
+.btn-arrow {
     font-size: 1.25rem;
     min-width: 50px;
     height: 40px;
@@ -59,8 +59,10 @@
     color: inherit;
 }
 
+/* MEDIA */
+
 @media (max-width: 737px) {
-    :is(.btn-left, .btn-right) {
+    :is(.btn_left, .btn_right) {
         display: none;
     }
 }

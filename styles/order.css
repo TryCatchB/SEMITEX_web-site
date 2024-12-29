@@ -8,7 +8,7 @@
 
 .order {
     display: grid;
-    grid-template-columns: 630px 250px;
+    grid-template-columns: 630px 300px;
     gap: 20px;
     align-items: center; 
     justify-content: space-between;
@@ -63,21 +63,20 @@
     justify-content: center;
     flex-direction: column;
     background-color: var(--white);
-    max-width: 100%;
     border-radius: 5px;
 }
 
 .form {
     label {
-        min-width: 150px;
+        min-width: 200px;
         font-size: 0.75rem;
         color: var(--cool-gray);
     }
 
     input {
-        width: 185px;
+        width: 225px;
         padding-left: 10px;
-        padding-block: 7px;
+        padding-block: 10px;
         box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         background-color: var(--lavender-light);
@@ -136,13 +135,9 @@
     color: var(--light-gray);
 }
 
-@media (max-width: 935px) {
+@media (max-width: 970px) {
     .order {
         grid-template-columns: 1fr;
-    }
-
-    .form input {
-        padding-block: 10px;
     }
 
     .order__title {

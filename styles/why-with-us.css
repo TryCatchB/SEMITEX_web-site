@@ -76,6 +76,8 @@
     }
 }
 
+/* MEDIA */
+
 @media (max-width: 935px) {
     .cards {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

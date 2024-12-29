@@ -5,6 +5,7 @@
   --cool-gray: #626366;
   --light-gray: #c0c0c0;
   --very-dark-gray: #111;
+  --very-dark-blue: #020985;
   --black-coal: #030303;
   --dark-blue: #2a336c;
   --dark-gray: #555;
@@ -19,6 +20,7 @@
   --dark-blue-gradient: linear-gradient(180deg, #969af7 0%, #686eec 100%), linear-gradient(136deg, #041080 8.52%, #0926c0 100%);
   --lavender-gradient: linear-gradient(180deg, #969af7 0%, #686eec 100%);
   --lavender-light-gradient: linear-gradient(90deg, #969af7 0%, rgba(150, 154, 247, 0) 100%);
+  --light-purple-gradient: linear-gradient(180deg, #fff 0%, #bdc0ff 100%);
 }
 
 /* Обнуляющие стили (CSS Reset) */
