@@ -1,0 +1,26 @@
+.footer {
+    background-color: var(--almost-black);
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.1%;
+    padding-block: 40px;
+}
+
+.footer__btn {
+    background-color: var(--lavander);
+
+    &:hover {
+        color: var(--lavander);
+        background-color: var(--white);
+    }
+}
+
+@media (max-width: 1170px) {
+    .nav__list_wrap {
+        display: none;
+    }
+}

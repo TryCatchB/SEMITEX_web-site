@@ -1,0 +1,77 @@
+.bg-answers-section {
+    padding-block: 150px;
+    background-image: url(/Images/background-answers.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.answers-section__answers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.answers__item {
+    color: var(--almost-black);
+    background: var(--light-purple-gradient);
+    box-shadow: 0 0 50px -10px rgba(22, 126, 194, 0.2);
+}
+
+.answers__text {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.answers__text_white {
+    color: var(--white);
+}
+
+.btn-arrow_translate {
+    color: var(--white);
+    transform: rotate(90deg);
+}
+
+.answers__header {
+    min-width: 100%;
+    background: var(--lavender-gradient);
+}
+
+.btn-arrow_white {
+    color: var(--very-dark-blue);
+    background-color: var(--white);
+    transform: rotate(-90deg);
+}
+
+.answers__text-answer {
+    font-family: inherit;
+    line-height: 35px;
+    width: 100%;
+    color: var(--almost-black);
+    background-color: var(--white);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    white-space: pre-wrap; /* Позволяет перенос текста */
+    word-wrap: break-word; /* Переносит длинные слова */
+    word-break: break-word; /* Перенос длинных слов */
+    overflow-wrap: break-word; /* Дополнительное свойство для переносов */
+}
+
+:is(.answers__item, .answers__header) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+:is(.answers__item, .answers__header, .answers__text-answer) {
+    padding: 2.3%;
+}
+
+.answers__item_opened {
+    flex-direction: column;
+    background: transparent;
+    padding: 0;
+    gap: 0;
+}
